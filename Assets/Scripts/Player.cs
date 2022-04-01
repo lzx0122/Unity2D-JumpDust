@@ -104,23 +104,6 @@ public class Player : MonoBehaviour
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     void Start()
     {
 
@@ -160,15 +143,7 @@ public class Player : MonoBehaviour
 
         }
 
-
-
-
-
     }
-
-
-
-
 
     void OnDrawGizmosSelected()
     {
@@ -185,8 +160,6 @@ public class Player : MonoBehaviour
         if (isKeyBoard)
         {
 
-
-
             do
             {
 
@@ -200,9 +173,6 @@ public class Player : MonoBehaviour
 
                 break;
             } while (isGrounded);
-
-
-
             if (isGrounded == true)
             {
                 //rb.sharedMaterial = nomarlMat;
@@ -216,8 +186,6 @@ public class Player : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     jumpkey = 0;
-
-
                 }
 
             };
@@ -265,16 +233,6 @@ public class Player : MonoBehaviour
 
 
             };
-
-
-
-
-
-
-
-
-
-
 
 
             if (mx > 0 || mx < 0)
@@ -341,10 +299,6 @@ public class Player : MonoBehaviour
 
         }
     }
-
-
-
-
 
 
     void jumpfun()
@@ -468,8 +422,6 @@ public class Player : MonoBehaviour
                 {
 
                     jumpPower.fillAmount = (jumpkey / walljumpMax) * 1;
-
-
                 }
                 else
                 {
@@ -532,9 +484,6 @@ public class Player : MonoBehaviour
 
 
             };
-
-
-
         }
 
 
@@ -618,15 +567,7 @@ public class Player : MonoBehaviour
 
 
         }
-
-
-
-
     }
-
-
-
-
 
 
 }

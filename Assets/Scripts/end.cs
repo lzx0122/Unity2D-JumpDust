@@ -54,18 +54,7 @@ public class end : MonoBehaviour
             endUI.SetActive(true);
             Time.timeScale = 0;
 
-
-
-
-
-
-
         }
-
-
-
-
-
 
     }
 
@@ -76,12 +65,6 @@ public class end : MonoBehaviour
         princeBackground.SetActive(false);
         addRank.SetActive(true);
         rankTimeText.text = timetxt.text;
-
-
-
-
-
-
     }
 
     public void rkaddButton()
