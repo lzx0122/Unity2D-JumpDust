@@ -22,20 +22,17 @@ public class switchCS : MonoBehaviour
     {
         if (isSwitch == true)
         {
-
             switchGO.GetComponent<SpriteRenderer>().sprite = (Sprite)Resources.Load<Sprite>("switch/switchdown");
         }
         else
         {
             switchGO.GetComponent<SpriteRenderer>().sprite = (Sprite)Resources.Load<Sprite>("switch/switchup");
-
         }
     }
 
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.tag == "switch")
         {
             Debug.Log("switch true");
@@ -44,19 +41,8 @@ public class switchCS : MonoBehaviour
             {
                 disFloor.SetActive(true);
                 GameObject.Find("disappearfloorGroup").GetComponent<disappearfloorCS>().refloor();
-
                 isSwitch = true;
-
-
                 Invoke("offSwitch", 0);
-
-
-
-
-
-
-
-
             }
 
         }
@@ -72,7 +58,6 @@ public class switchCS : MonoBehaviour
     {
         disFloor.gameObject.SetActive(true);
         Invoke("isSwitchfun", 2);
-
     }
     void isSwitchfun()
     {
