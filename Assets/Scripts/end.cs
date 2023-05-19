@@ -5,15 +5,12 @@ using System.IO;
 using System;
 using System.Text;
 using UnityEngine.UI;
-
 using UnityEngine.SceneManagement;
 
 
 public class end : MonoBehaviour
 {
     // Start is called before the first frame update
-
-
 
     [SerializeField] GameObject endUI;
     [SerializeField] PlayerData data;

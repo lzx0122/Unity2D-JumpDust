@@ -6,10 +6,8 @@ using UnityEngine.UI;
 
 public class hat : MonoBehaviour
 {
-
     [SerializeField] GameObject playerHat;
     [SerializeField] TMPro.TMP_Dropdown hatdropdown;
-
     private string hatpath;
 
     void Start()
@@ -41,10 +39,7 @@ public class hat : MonoBehaviour
         {
             playerHat.SetActive(false);
 
-
         }
-
-
 
     }
 }

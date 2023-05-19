@@ -2,22 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-
 public class Timer : MonoBehaviour
 {
     // Start is called before the first frame update
     public float NowTime;
     public bool isTiming= false;
     public Text timetext;
-
-    
-
     // public float stoptime;
     // private bool isStoptime = false;
-
-
-
     void Start()
     {
         NowTime = 0f;
@@ -26,7 +18,6 @@ public class Timer : MonoBehaviour
     void Update(){
         if (Input.GetKeyDown(KeyCode.Space)){
             isTiming = true;
-            
         }
         // if (Input.GetKeyDown(KeyCode.Escape)){
         //     if(isStoptime == false ){
@@ -36,9 +27,6 @@ public class Timer : MonoBehaviour
         //         NowTime = stoptime;
         //         isStoptime = false;
         //     }
-         
-            
-
         // }
     }
     private string timebox;
@@ -46,15 +34,11 @@ public class Timer : MonoBehaviour
     void FixedUpdate()
     {
         if(isTiming == true){
-
-        
             NowTime+=Time.fixedDeltaTime;
-        
             timebox = strtime(NowTime);
             if(timebox != ""){
                 timetext.text = (string)timebox;
             }
-
         }
     }
     private string strtime(float a){
@@ -71,7 +55,5 @@ public class Timer : MonoBehaviour
         }else{
             return "00:"+ms.ToString().PadLeft(2,'0');
         }
-        
-
     }
 }
